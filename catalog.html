@@ -12,13 +12,13 @@
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#">Главная</a>
+          <a class="navigation-link" href="#">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гостинницы</a>
+          <a class="navigation-link navigation-link-current" href="#">Гостинницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -47,14 +47,14 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="#">
+          <a class="breadcrumbs-link">
             <span class="visually-hidden">
             На главную
             </span>
           </a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гостиницы</a>
+          <a class="breadcrumbs-link" href="#">Гостиницы</a>
         </li>
       </ul>
     </header>
@@ -91,15 +91,15 @@
       <div class="price-input">
         <div class="field">
           <span><b>От</b></span>
-          <input type="number" class="input-min" value="0">
+         <form> <input type="number" class="input-min" value="0"></form>
         </div>
       </div>
       <div class="field">
         <span><b>До</b></span>
-        <input type="number" class="input-max" value="9000">
+        <form><input type="number" class="input-max" value="9000"></form>
       </div>
-      <a class="button button-all" href="#">Применить</a>
-      <a class="button button-all" href="#">Сбросить</a>
+      <button type="submit">Применить</a>
+      <button type="reset">Сбросить</a>
     </div>
     <section>
       <h2>Найдено гостиниц: 38</h2>
@@ -126,16 +126,13 @@
           От 4000 ₽</b>
         <a class="hotel-card-button button" href="#">подробнее</a>
         <a class="hotel-card-button button" href="#">в избранное</a>
-        <div class="simple-rating">
-          <div class="simple-rating-items">
-            <input id="simple-rating-4" type="radio" class="simple-rating-items" name="simple-rating" value="4">
-            <label for="simple-rating-4" class="simple-rating-label"></label>
-            <input id="simple-rating-3" type="radio" class="simple-rating-items" name="simple-rating" value="3">
-            <label for="simple-rating-3" class="simple-rating-label"></label>
-            <input id="simple-rating-2" type="radio" class="simple-rating-items" name="simple-rating" value="2">
-            <label for="simple-rating-2" class="simple-rating-label"></label>
-            <input id="simple-rating-1" type="radio" class="simple-rating-items" name="simple-rating" value="1">
-            <label for="simple-rating-1" class="simple-rating-label"></label>
+        <div class="rating">
+          <div class="rating-mini">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
             <p>Рейтинг: 8,5</p>
           </div>
         </div>
@@ -149,16 +146,13 @@
           От 5000 ₽</b>
         <a class="hotel-card-button button" href="#">подробнее</a>
         <a class="hotel-card-button button" href="#">в избранном</a>
-        <div class="simple-rating">
-          <div class="simple-rating-items">
-            <input id="simple-rating-4" type="radio" class="simple-rating-items" name="simple-rating" value="4">
-            <label for="simple-rating-4" class="simple-rating-label"></label>
-            <input id="simple-rating-3" type="radio" class="simple-rating-items" name="simple-rating" value="3">
-            <label for="simple-rating-3" class="simple-rating-label"></label>
-            <input id="simple-rating-2" type="radio" class="simple-rating-items" name="simple-rating" value="2">
-            <label for="simple-rating-2" class="simple-rating-label"></label>
-            <input id="simple-rating-1" type="radio" class="simple-rating-items" name="simple-rating" value="1">
-            <label for="simple-rating-1" class="simple-rating-label"></label>
+        <div class="rating">
+          <div class="rating-mini">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
             <p>Рейтинг: 9,2</p>
           </div>
         </div>
@@ -172,14 +166,12 @@
           От 2500 ₽</b>
         <a class="hotel-card-button button" href="#">подробнее</a>
         <a class="hotel-card-button button" href="#">в избранное</a>
-        <div class="simple-rating">
-          <div class="simple-rating-items">
-            <input id="simple-rating-3" type="radio" class="simple-rating-items" name="simple-rating" value="3">
-            <label for="simple-rating-3" class="simple-rating-label"></label>
-            <input id="simple-rating-2" type="radio" class="simple-rating-items" name="simple-rating" value="2">
-            <label for="simple-rating-2" class="simple-rating-label"></label>
-            <input id="simple-rating-1" type="radio" class="simple-rating-items" name="simple-rating" value="1">
-            <label for="simple-rating-1" class="simple-rating-label"></label>
+        <div class="rating">
+          <div class="rating-mini">
+            <span class="active"></span>
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
             <p>Рейтинг: 6,9</p>
           </div>
         </div>
@@ -193,12 +185,11 @@
           От 1500 ₽</b>
         <a class="hotel-card-button button" href="#">подробнее</a>
         <a class="hotel-card-button button" href="#">в избранное</a>
-        <div class="simple-rating">
-          <div class="simple-rating-items">
-            <input id="simple-rating-2" type="radio" class="simple-rating-items" name="simple-rating" value="2">
-            <label for="simple-rating-2" class="simple-rating-label"></label>
-            <input id="simple-rating-1" type="radio" class="simple-rating-items" name="simple-rating" value="1">
-            <label for="simple-rating-1" class="simple-rating-label"></label>
+        <div class="rating">
+          <div class="rating-mini">
+            <span class="active"></span>
+            <span class="active"></span>
+          </div>
             <p>Рейтинг: 5,0</p>
           </div>
         </div>
@@ -230,7 +221,7 @@
 
             <input type="text"
             placeholder="Ваш e-mail">
-            <a class="button button-all" href="#">Подписаться</a>
+            <button type="submit">Подписаться</button>
           </form>
   </main>
    <footer class="page-footer">
