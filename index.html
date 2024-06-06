@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="base">
    <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button button-all" href="#">Хочу сюда</a>
+          <a class="button button-all-1" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -49,11 +49,11 @@
       <img src="images/signature.svg" alt="подпись" width="256" height="29">
     </section>
 
-     <h2>
+     <h2 class="town">
       Седона — небольшой городок в Аризоне,
 заслуживающий большего!
      </h2>
-       <p>
+       <p class="reasons">
       Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
        </p>
        <section class="advantages">
@@ -83,8 +83,8 @@
             <img src="images/photo-2.jpg" alt="Каньон" width="800" height="385">
           </li>
         </ul>
-        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p>Опытный персонал и качественное обслуживание</p>
+        <h2 class="invitation">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="invitation-description">Опытный персонал и качественное обслуживание</p>
         <ul class="services">
           <li class="services-item">
             <img src="images/home.svg" alt="Домик" width="75" height="72">
@@ -102,18 +102,19 @@
             <p class="services-description">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
-          </ul>
-          <h2>Заинтересовались?</h2>
-          <img src="images/background.jpg" alt="фон" width="1200" height="415">
-          <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="" method="post">
-
-            <input type="text"
+        </ul>
+        <div>
+            <h2 class="interesting">Заинтересовались?</h2>
+            <img src="images/background.jpg" alt="фон" width="1200" height="415">
+            <p class="interesting-description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="button button-all-2" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          </div>
+        <div class="registration">
+          <h2 class="registration-title">Подпишитесь на рассылку</h2>
+          <p class="registration-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form action="" method="post"><input type="text"
             placeholder="Ваш e-mail">
-            <a class="button button-all" href="#">Подписаться</a>
+            <button class="button-all-3" type="submit">Подписаться</button>
           </form>
    </section>
    </main>
@@ -138,10 +139,10 @@
      </ul>
     </section>
     <section class="footer-contacts">
-      <a href="tel:+78128121212">+7 (812) 812-12-12 </a>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
     </section>
     <section class="newsletter">
-      <h3>.html academy </h3>
+      <a href="#">.html academy </a>
     </section>
    </footer>
   </body>

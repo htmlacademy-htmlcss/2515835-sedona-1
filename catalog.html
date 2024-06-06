@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="base">
    <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button button-all" href="#">Хочу сюда</a>
+          <a class="button button-all-1" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -59,35 +59,35 @@
     </header>
     <form>
     <section class="catalog-products">
-      <p><b>Инфраструктура:</b></p>
+      <p class="view"><b>Инфраструктура:</b></p>
       <ul>
         <li>
-          <label><input type="checkbox" name="swimm">Бассейн</label>
+          <label class="conveniences"><input type="checkbox" name="swimm">Бассейн</label>
         </li>
         <li>
-          <label><input type="checkbox" name="parking">Парковка</label>
+          <label class="conveniences"><input type="checkbox" name="parking">Парковка</label>
         </li>
         <li>
-          <label><input type="checkbox" name="Wi-Fi">Wi-Fi</label>
+          <label class="conveniences"><input type="checkbox" name="Wi-Fi">Wi-Fi</label>
         </li>
       </ul>
     </section>
     <section class="catalog-products">
-      <p><b>Тип жилья:</b></p>
+      <p class="view"><b>Тип жилья:</b></p>
       <ul>
         <li>
-          <label><input type="radio" name="hotel">Гостиница</label>
+          <label class="conveniences"><input type="radio" name="hotel">Гостиница</label>
         </li>
         <li>
-          <label><input type="radio" name="hotel">Мотель</label>
+          <label class="conveniences"><input type="radio" name="hotel">Мотель</label>
         </li>
         <li>
-          <label><input type="radio" name="hotel">Апартаменты</label>
+          <label class="conveniences "><input type="radio" name="hotel">Апартаменты</label>
         </li>
       </ul>
     </section>
     <div class="wrapper">
-      <p>Стоимость, ₽:</p>
+      <p class="cost">Стоимость, ₽:</p>
       <div class="price-input">
         <div class="field">
           <span><b>От</b></span>
@@ -98,13 +98,13 @@
         <span><b>До</b></span>
         <input type="number" class="input-max" value="9000">
       </div>
-      <button type="submit">Применить</a>
-      <button type="reset">Сбросить</a>
+      <button class="apply" type="submit">Применить</a>
+      <button class="throw-off" type="reset">Сбросить</a>
     </div>
     </form>
     <section>
 
-      <h2>Найдено гостиниц: 38</h2>
+      <h2 class="hotel">Найдено гостиниц: 38</h2>
       <select class="select-control">
         <option value="cheap">Сначала дешевое</option>
         <option value="popular">Сначала популярное</option>
@@ -126,8 +126,8 @@
         </a>
         <b class="hotel-card-price"> Гостиница
           От 4000 ₽</b>
-        <a class="hotel-card-button button" href="#">подробнее</a>
-        <a class="hotel-card-button button" href="#">в избранное</a>
+        <a class="hotel-card-button-primary button" href="#">подробнее</a>
+        <a class="hotel-card-button-secondary button" href="#">в избранное</a>
         <div class="rating">
           <div class="rating-mini">
             <span class="active"></span>
@@ -146,8 +146,8 @@
         </a>
         <b class="hotel-card-price"> Гостиница
           От 5000 ₽</b>
-        <a class="hotel-card-button button" href="#">подробнее</a>
-        <a class="hotel-card-button button" href="#">в избранном</a>
+        <a class="hotel-card-button-primary button" href="#">подробнее</a>
+        <a class="hotel-card-button-in button" href="#">в избранном</a>
         <div class="rating">
           <div class="rating-mini">
             <span class="active"></span>
@@ -166,8 +166,8 @@
         </a>
         <b class="hotel-card-price"> Гостиница
           От 2500 ₽</b>
-        <a class="hotel-card-button button" href="#">подробнее</a>
-        <a class="hotel-card-button button" href="#">в избранное</a>
+        <a class="hotel-card-button-primary button" href="#">подробнее</a>
+        <a class="hotel-card-button-secondary button" href="#">в избранное</a>
         <div class="rating">
           <div class="rating-mini">
             <span class="active"></span>
@@ -185,8 +185,8 @@
         </a>
         <b class="hotel-card-price"> Гостиница
           От 1500 ₽</b>
-        <a class="hotel-card-button button" href="#">подробнее</a>
-        <a class="hotel-card-button button" href="#">в избранное</a>
+        <a class="hotel-card-button-primary button" href="#">подробнее</a>
+        <a class="hotel-card-button-secondary button" href="#">в избранное</a>
         <div class="rating">
           <div class="rating-mini">
             <span class="active"></span>
@@ -217,14 +217,17 @@
         <a class="pagination-link" href="#">10</a>
       </li>
     </ul>
-    <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <div class="registration">
+      <h2 class="registration-title">Подпишитесь на рассылку</h2>
+       <p class="registration-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="" method="post">
 
             <input type="text"
             placeholder="Ваш e-mail">
-            <button type="submit">Подписаться</button>
+            <button class="button-all-3" type="submit">Подписаться</button>
           </form>
+    </div>
+
   </main>
    <footer class="page-footer">
     <section class="footer-social">
@@ -247,10 +250,10 @@
      </ul>
     </section>
     <section class="footer-contacts">
-      <a href="tel:+78128121212">+7 (812) 812-12-12 </a>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12 </a>
     </section>
     <section class="newsletter">
-      <h3>.html academy </h3>
+      <a href="#">.html academy </a>
     </section>
    </footer>
 
