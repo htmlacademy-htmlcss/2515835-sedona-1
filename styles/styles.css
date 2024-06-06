@@ -13,7 +13,7 @@
     font-display: swap;
 }
 
-body{
+base{
     font-family: "PT Sans";
     font-size: 22px;
     line-height: 26px;
@@ -47,7 +47,6 @@ body{
     text-decoration: none;
 }
 .town{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size:30px;
     line-height: 36px;
@@ -55,7 +54,6 @@ body{
     color:#000000;
 }
 .reasons{
-    font-family: "PT Sans";
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -63,7 +61,6 @@ body{
     color: #333333;
 }
 .advantages-title{
-    font-family: "PT Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -72,7 +69,6 @@ body{
     text-transform: uppercase;
 }
 .advantages-description{
-    font-family: "PT Sans";
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -80,7 +76,6 @@ body{
     color:#333333;
 }
 .invitation{
-    font-family: "PT Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -89,7 +84,6 @@ body{
     text-transform: uppercase;
 }
 .invitation-description{
-    font-family: "PT Sans";
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -97,7 +91,6 @@ body{
     color:#333333;
 }
 .services-title{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 24px;
     line-height: 28px;
@@ -106,7 +99,6 @@ body{
     text-transform: uppercase;
 }
 .services-description{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 18px;
     line-height: 21px;
@@ -114,7 +106,6 @@ body{
     color:#333333;
 }
 .interesting{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 30px;
     line-height: 36px;
@@ -123,7 +114,6 @@ body{
     text-transform: uppercase;
 }
 .interesting-description{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 22px;
     line-height: 26px;
@@ -142,7 +132,6 @@ body{
     text-decoration: none;
 }
 .registration-title{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 30px;
     line-height: 36px;
@@ -151,7 +140,6 @@ body{
     text-transform: uppercase;
 }
 .registration-description{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 22px;
     line-height: 26px;
@@ -170,7 +158,6 @@ body{
     text-decoration: none;
 }
 .phone{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 40px;
     line-height: 40px;
@@ -178,27 +165,25 @@ body{
     color:#000000;
 }
 .inner-header-title{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 60px;
     line-height: 78px;
     color:#FFFFFF;
 }
 .breadcrumbs-link{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 16px;
     line-height: 21px;
     color:#FFFFFF;
 }
 .view{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 20px;
     line-height: 24px;
     color:#FFFFFF;
 }
-label{
+
+.conveniences{
     font-family: "PT Sans";
     font-weight: 400px;
     font-size: 18px;
@@ -206,7 +191,6 @@ label{
     color:#FFFFFF;
 }
 .cost{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 20px;
     line-height: 24px;
@@ -235,7 +219,6 @@ label{
     text-decoration: none;
 }
 .hotel{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 30px;
     line-height: 36px;
@@ -243,7 +226,6 @@ label{
     text-transform: uppercase;
 }
 .hotel-card-title{
-    font-family: "PT Sans";
     font-weight: 700px;
     font-size: 24px;
     line-height: 28px;
@@ -251,13 +233,12 @@ label{
     text-decoration: none;
 }
 .hotel-card-price{
-    font-family: "PT Sans";
     font-weight: 400px;
     font-size: 18px;
     line-height: 21px;
     color:#333333;
 }
-.hotel-card-button-brown{
+.hotel-card-button-primary{
     font-family: "PT Sans";
     font-weight: 700px;
     font-size: 16px;
@@ -268,7 +249,7 @@ label{
     text-transform: uppercase;
     text-decoration: none;
 }
-.hotel-card-button-blue{
+.hotel-card-button-secondary{
     font-family: "PT Sans";
     font-weight: 700px;
     font-size: 16px;
@@ -279,7 +260,7 @@ label{
     text-transform: uppercase;
     text-decoration: none;
 }
-.hotel-card-button-green{
+.hotel-card-button-in{
     font-family: "PT Sans";
     font-weight: 700px;
     font-size: 16px;
