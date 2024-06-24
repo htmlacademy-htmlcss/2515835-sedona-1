@@ -12,19 +12,59 @@
     src: url(../fonts/ptsans-700.woff2) format("woff2");
     font-display: swap;
 }
+.html{
+    height:100%;
+}
 
-base{
+.base{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans";
     font-size: 22px;
     line-height: 26px;
     color:#242424;
     background-color: #fbf7f4;
 }
+.main-container{
+    flex-grow: 1;
+    width: 1200px;
+}
 .page-header{
     background-color:#FFFFFF;
     color:#000000 ;
 }
+.navigation{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-between;
+
+}
+.navigation-list{
+    width:610px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+.navigation-user{
+
+    margin-left: auto;
+    max-width: 300px;
+
+}
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+}
 .navigation-link{
+    width:68px;
+    height: 24px;
+    margin-right: 20px;
     font-family: "PT Sans";
     font-weight: 700;
     line-height: 24px;
@@ -45,6 +85,15 @@ base{
     background-color:#756157 ;
     text-transform: uppercase;
     text-decoration: none;
+
+}
+
+
+.welcome{
+    width:187px;
+    height:44px;
+    top:-100px;
+    margin-left: 135px;
 }
 .town{
     font-weight: 700px;
@@ -60,21 +109,48 @@ base{
     text-align: center;
     color: #333333;
 }
+
 .advantages-title{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color:#000000;
     text-transform: uppercase;
+}
+.advantages-item{
+    width: 400px;
+    height: 385px;
+    color:#FFFFFF;
+    background-color:#82B3D3 ;
+    list-style: none;
+}
+.advantages-item-square,
+.advantages-item-tourist{
+    background-color: rgba(131, 179, 211, 0.12);
+    color:#000000;
+}
+.advantages-item-road{
+    background-color: rgba(131, 179, 211, 0.2);
+    color:#000000;
 }
 .advantages-description{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color:#333333;
 }
+
+.advantages-list{
+    margin:0;
+    padding: o;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:start;
+
+}
+
+
+
 .invitation{
     font-weight: 700;
     font-size: 24px;
@@ -89,6 +165,23 @@ base{
     line-height: 26px;
     text-align: center;
     color:#333333;
+}
+.services-item-home,
+.services-item-souvenir{
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.services{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+    width:1200px;
+    height: 385px;
+    text-align: center;
+    list-style: none;
+}
+.services-item{
+    width: 400px;
 }
 .services-title{
     font-weight: 700px;
@@ -131,6 +224,15 @@ base{
     text-transform: uppercase;
     text-decoration: none;
 }
+.registration{
+    position: relative;
+}
+.registration-base{
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
 .registration-title{
     font-weight: 700px;
     font-size: 30px;
@@ -157,12 +259,66 @@ base{
     text-transform: uppercase;
     text-decoration: none;
 }
+.footer-social-list{
+    display: flex;
+    list-style: none;
+    width: 142px;
+    height: 40px;
+    align-self: stretch;
+}
+.page-footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 1,060px;
+    height:50px;
+    top:40px;
+    left: 70px;
+}
+.footer-contacts{
+    align-self: baseline;
+}
+.newsletter{
+    align-self: baseline;
+}
+.footer-social{
+    align-self: baseline;
+}
 .phone{
     font-weight: 400px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color:#000000;
+}
+.main-inner{
+    position: relative;
+
+}
+.inner-header{
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+.catalog-products{
+    display:inline-block;
+}
+.breadcrumbs{
+    display:flex;
+    list-style: none;
+}
+.catalog-products-title{
+    list-style: none;
+}
+.catalog-hotels{
+    display:flex;
+    flex-wrap: nowrap;
+}
+.hotel-card-container{
+    width: 340;
+    height: 438;
+
 }
 .inner-header-title{
     font-weight: 700px;
@@ -218,13 +374,7 @@ base{
     text-transform: uppercase;
     text-decoration: none;
 }
-.hotel{
-    font-weight: 700px;
-    font-size: 30px;
-    line-height: 36px;
-    color:#000000;
-    text-transform: uppercase;
-}
+
 .hotel-card-title{
     font-weight: 700px;
     font-size: 24px;

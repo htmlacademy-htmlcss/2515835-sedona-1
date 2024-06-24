@@ -24,23 +24,23 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link navigation-user" href="#">
             <img src="images/search.svg" alt="Поиск" width="44" height="64">
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
+          <a class="navigation-link navigation-user" href="#">
             <img src="images/fovourites.svg" alt=" Избранное" width="20" height="20">
             <span>12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button button-all-1" href="#">Хочу сюда!</a>
+          <a class="button button-all-1 navigation-user" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
    </header>
-   <main class="main-inner">
+   <main class="main-container main-inner">
     <img src="images/catalog-background.jpg" alt="фон каталога" width="1200" height="412">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -60,7 +60,7 @@
     <form>
     <section class="catalog-products">
       <p class="view"><b>Инфраструктура:</b></p>
-      <ul>
+      <ul class="catalog-products-title">
         <li>
           <label class="conveniences"><input type="checkbox" name="swimm">Бассейн</label>
         </li>
@@ -74,7 +74,7 @@
     </section>
     <section class="catalog-products">
       <p class="view"><b>Тип жилья:</b></p>
-      <ul>
+      <ul class="catalog-products-title">
         <li>
           <label class="conveniences"><input type="radio" name="hotel">Гостиница</label>
         </li>
@@ -102,8 +102,7 @@
       <button class="throw-off" type="reset">Сбросить</a>
     </div>
     </form>
-    <section>
-
+     <section>
       <h2 class="hotel">Найдено гостиниц: 38</h2>
       <select class="select-control">
         <option value="cheap">Сначала дешевое</option>
@@ -119,7 +118,9 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
-      <div class="hotel-card">
+     <ul class="catalog-hotels">
+       <div class="hotel-card">
+        <li class="hotel-card-container">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/hotel/hotel-1.jpg" alt="Гостиница" width="300" height="212">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -138,8 +139,11 @@
             <p>Рейтинг: 8,5</p>
           </div>
         </div>
+      </li>
       </div>
+
       <div class="hotel-card">
+        <li class="hotel-card-container">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/hotel/hotel-2.jpg" alt="Гостиница-2" width="300" height="212">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -158,8 +162,10 @@
             <p>Рейтинг: 9,2</p>
           </div>
         </div>
+        </li>
       </div>
       <div class="hotel-card">
+       <li class="hotel-card-container">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/hotel/hotel-3.jpg" alt="Гостиница-3" width="300" height="212">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -175,10 +181,12 @@
             <span class="active"></span>
           </div>
             <p>Рейтинг: 6,9</p>
+           </div>
           </div>
-        </div>
+         </li>
       </div>
       <div class="hotel-card">
+        <li class="hotel-card-container">
         <a class="hotel-card-link" href="#">
           <img class="hotel-card-image" src="images/hotel/hotel-4.jpg" alt="Гостиница-4" width="300" height="212">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -195,7 +203,9 @@
             <p>Рейтинг: 5,0</p>
           </div>
         </div>
+      </li>
       </div>
+     </ul>
     </section>
     <ul class="pagination">
       <li class="pagination-item">
@@ -218,14 +228,16 @@
       </li>
     </ul>
     <div class="registration">
-      <h2 class="registration-title">Подпишитесь на рассылку</h2>
+      <div class="registration-base"></div><h2 class="registration-title">Подпишитесь на рассылку</h2>
        <p class="registration-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="" method="post">
+       <div class="form-container"> <form action="" method="post">
 
             <input type="text"
             placeholder="Ваш e-mail">
             <button class="button-all-3" type="submit">Подписаться</button>
           </form>
+      </div>
+      </div>
     </div>
 
   </main>
