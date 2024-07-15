@@ -41,7 +41,7 @@
     </nav>
    </header>
    <main class="main-container main-inner">
-    <img src="images/catalog-background.jpg" alt="фон каталога" width="1200" height="412">
+   <div class=" header-background">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -60,7 +60,7 @@
     <form>
     <section class="catalog-products">
       <p class="view"><b>Инфраструктура:</b></p>
-      <ul class="catalog-products-title">
+      <ul class="catalog-products-container">
         <li>
           <label class="conveniences"><input type="checkbox" name="swimm">Бассейн</label>
         </li>
@@ -102,7 +102,8 @@
       <button class="throw-off" type="reset">Сбросить</a>
     </div>
     </form>
-     <section>
+    </div>
+     <section class="select-container">
       <h2 class="hotel">Найдено гостиниц: 38</h2>
       <select class="select-control">
         <option value="cheap">Сначала дешевое</option>
@@ -118,6 +119,7 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
+
      <ul class="catalog-hotels">
        <div class="hotel-card">
         <li class="hotel-card-container">
