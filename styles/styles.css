@@ -79,13 +79,18 @@
     font-family: "PT Sans";
     font-weight: 700px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
     color:#FFFFFF;
     background-color:#756157 ;
     text-transform: uppercase;
     text-decoration: none;
-
+    width:160px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 14px;
 }
 .welcome{
     background-image:url(/images/index-background.jpg);
@@ -405,10 +410,11 @@
     background-image: url(/images/catalog-background.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    height:412px;
+    background-size: cover;
 }
 .catalog-products{
     display:flex;
+    justify-content: flex-start;
     width:1060px;
     flex-wrap: wrap;
 }
@@ -424,6 +430,31 @@
   justify-content:space-between;
   flex-wrap: wrap;
 
+}
+.catalog-products-container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    width: 150px;
+}
+.catalog-filter-group{
+    margin-right: 140px;
+    margin-left: 0;
+}
+.wrapper{
+    padding: 0;
+    outline: none;
+    border: 0;
+    margin-right: 71px;
+    width: 288px;
+    min-height: 160px;
+    margin-left: 0;
+}
+.button-container-filter{
+    width: 191px;
+    min-height: 104px;
+    margin-top: 56px;
 }
 .hotel-card-container{
     width: 340;
@@ -447,8 +478,18 @@
     font-size: 20px;
     line-height: 24px;
     color:#FFFFFF;
-}
+    margin-bottom: 32px;
+    padding: 0;
 
+}
+.catalog-filter{
+    display:flex;
+
+}
+.catalog-filter-range{
+    display:flex;
+    justify-content: baseline;
+}
 
 .conveniences{
     font-family: "PT Sans";
@@ -487,9 +528,9 @@
 }
 .select-container{
     display: flex;
-    width:1060px;
-    height:49px;
-    padding:50px 70px;
+    width: 1060px;
+    min-height: 49px;
+    padding: 50px 70px;
     padding-bottom: 40px;
     align-items: center;
 
@@ -507,6 +548,14 @@
     font-size: 18px;
     line-height: 21px;
     color:#333333;
+}
+.hotel{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    gap: 7px;
 }
 .hotel-card-button-primary{
     font-family: "PT Sans";
@@ -540,4 +589,67 @@
     background-color:#7DB54F ;
     text-transform: uppercase;
     text-decoration: none;
+}
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    gap: 8px;
+    margin: 0;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.pagination-link{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    background-color: #82b3d3;
+    display: flex;
+    min-width: 60px;
+    min-height: 60px;
+    justify-content: center;
+    box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.pagination-link-current{
+    background: #f2f2f2;
+    color: #000000;
+}
+.pagination-link-ellipses{
+    background-color: transparent;
+    color: #000000;
+}
+.subscription-catalog{
+    min-height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscription-catalog h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.subscription-catalog p{
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    width: 475px;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
