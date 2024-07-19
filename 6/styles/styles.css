@@ -77,15 +77,20 @@
 }
 .button-all-1{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     text-align: center;
     color:#FFFFFF;
     background-color:#756157 ;
     text-transform: uppercase;
     text-decoration: none;
-
+    width:160px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 14px;
 }
 .welcome{
     background-image:url(/images/index-background.jpg);
@@ -98,7 +103,7 @@
 }
 
 .town{
-    font-weight: 700px;
+    font-weight: 700;
     font-size:30px;
     line-height: 36px;
     color:#000000;
@@ -163,7 +168,7 @@
     height: 42px;
 }
 .advantages-content{
-    padding: 103px,85px,103px,85px;
+    padding: 103px 85px 103px 85px;
 }
 
 .advantages-list{
@@ -200,11 +205,11 @@
 }
 .services-item-home{
     background-color: rgba(131, 179, 211, 0.12);
-    padding:80px, 85px, 80px, 85px;
+    padding:80px 85px 80px 85px;
 }
 .services-item-souvenir{
     background-color: rgba(131, 179, 211, 0.12);
-    padding:80px, 85px, 80px, 85px;
+    padding:80px 85px 80px 85px;
 }
 .services{
     margin: 0;
@@ -219,7 +224,7 @@
     width: 400px;
 }
 .services-title{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -227,7 +232,7 @@
     text-transform: uppercase;
 }
 .services-description{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -249,7 +254,7 @@
     margin-bottom: 20px;
 }
 .interesting-description{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -405,10 +410,11 @@
     background-image: url(/images/catalog-background.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    height:412px;
+    background-size: cover;
 }
 .catalog-products{
     display:flex;
+    justify-content: flex-start;
     width:1060px;
     flex-wrap: wrap;
 }
@@ -425,47 +431,82 @@
   flex-wrap: wrap;
 
 }
+.catalog-products-container{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    width: 150px;
+}
+.catalog-filter-group{
+    margin-right: 140px;
+    margin-left: 0;
+}
+.wrapper{
+    padding: 0;
+    outline: none;
+    border: 0;
+    margin-right: 71px;
+    width: 288px;
+    min-height: 160px;
+    margin-left: 0;
+}
+.button-container-filter{
+    width: 191px;
+    min-height: 104px;
+    margin-top: 56px;
+}
 .hotel-card-container{
-    width: 340;
-    height: 438;
+    width: 340px;
+    height: 438px;
     list-style: none;
 }
 .inner-header-title{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 60px;
     line-height: 78px;
     color:#FFFFFF;
 }
 .breadcrumbs-link{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     color:#FFFFFF;
 }
 .view{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color:#FFFFFF;
-}
+    margin-bottom: 32px;
+    padding: 0;
 
+}
+.catalog-filter{
+    display:flex;
+
+}
+.catalog-filter-range{
+    display:flex;
+    justify-content: baseline;
+}
 
 .conveniences{
     font-family: "PT Sans";
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color:#FFFFFF;
 }
 .cost{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color:#FFFFFF;
 }
 .apply{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -477,7 +518,7 @@
 
 .throw-off{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -487,30 +528,38 @@
 }
 .select-container{
     display: flex;
-    width:1060px;
-    height:49px;
-    padding:50px 70px;
+    width: 1060px;
+    min-height: 49px;
+    padding: 50px 70px;
     padding-bottom: 40px;
     align-items: center;
 
 }
 
 .hotel-card-title{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color:#000000;
     text-decoration: none;
 }
 .hotel-card-price{
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color:#333333;
 }
+.hotel{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    gap: 7px;
+}
 .hotel-card-button-primary{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -521,7 +570,7 @@
 }
 .hotel-card-button-secondary{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -532,7 +581,7 @@
 }
 .hotel-card-button-in{
     font-family: "PT Sans";
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -540,4 +589,67 @@
     background-color:#7DB54F ;
     text-transform: uppercase;
     text-decoration: none;
+}
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    gap: 8px;
+    margin: 0;
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.pagination-link{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    background-color: #82b3d3;
+    display: flex;
+    min-width: 60px;
+    min-height: 60px;
+    justify-content: center;
+    box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.pagination-link-current{
+    background: #f2f2f2;
+    color: #000000;
+}
+.pagination-link-ellipses{
+    background-color: transparent;
+    color: #000000;
+}
+.subscription-catalog{
+    min-height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscription-catalog h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.subscription-catalog p{
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    width: 475px;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
