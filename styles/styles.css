@@ -98,7 +98,7 @@
     height: 485px;
     background-size: cover;
 }
-.hero-advantantages{
+.hero-advantages{
     padding: 69px 274.5px;
 }
 
@@ -415,8 +415,12 @@
 .catalog-products{
     display:flex;
     justify-content: flex-start;
-    width:1060px;
+    width:370.85px;
+    height: 157px;
     flex-wrap: wrap;
+}
+.catalog-filter-title{
+    display: flex;
 }
 .breadcrumbs{
     display:flex;
@@ -437,10 +441,6 @@
     margin: 0;
     gap: 16px;
     width: 150px;
-}
-.catalog-filter-group{
-    margin-right: 140px;
-    margin-left: 0;
 }
 .wrapper{
     padding: 0;
@@ -482,10 +482,7 @@
     padding: 0;
 
 }
-.catalog-filter{
-    display:flex;
 
-}
 .catalog-filter-range{
     display:flex;
     justify-content: baseline;
