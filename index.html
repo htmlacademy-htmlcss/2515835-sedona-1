@@ -7,31 +7,31 @@
   </head>
   <body class="base">
     <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo.png" alt="Логотип городка Седона" width="140" height="70">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo.png" alt="Логотип городка Седона" width="140" height="70">
-        </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
+          <li class="navigation-item-current">
+            <a class="navigation-link-current" href="#">Главная</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+          <li class="navigation-item-current">
+            <a class="navigation-link-current" href="#">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостинницы</a>
+          <li class="navigation-item-current">
+            <a class="navigation-link-current" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="#">
+            <a class="navigation-link" href="#">
               <img src="images/search.svg" alt="Поиск" width="44" height="64">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="#">
+            <a class="navigation-link" href="#">
               <img src="images/fovourites.svg" alt="Избранное" width="20" height="20">
-              <span>12</span>
+              <span class="notification-badge">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -135,31 +135,28 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <img src="images/vk.svg" alt="ВКонтакте" width="47" height="40">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <img src="images/telegram.svg" alt="Телеграм" width="47" height="40">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <img src="images/youtube.svg" alt="Ютуб" width="47" height="40">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-contacts">
-        <a class="phone" href="+78128121212">+7(812)812-12-12</a>
-      </div>
-      <div class="newsletter">
-        <a href="#">.html academy</a>
-      </div>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <img src="images/vk.svg" alt="ВКонтакте" width="47" height="40">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <img src="images/telegram.svg" alt="Телеграм" width="47" height="40">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <img src="images/youtube.svg" alt="Ютуб" width="47" height="40">
+          </a>
+        </li>
+      </ul>
+      <a class="phone" href="+78128121212">+7(812)812-12-12</a>
+      <a class="logo-academy" href="#">
+        <span class="visually-hidden" hidden>Логотип HTML-академии</span>
+        <img src="images/logo-academy.svg" width="115" height="34">
+      </a>
     </footer>
   </body>
 </html>
