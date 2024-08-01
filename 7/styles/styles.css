@@ -35,6 +35,9 @@
 .page-header{
     background-color:#FFFFFF;
     color:#000000;
+    width: 1200px;
+}
+.header-container{
     width: 1060px;
     padding-left: 70px;
     padding-right: 70px;
