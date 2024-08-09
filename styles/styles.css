@@ -17,16 +17,21 @@
 }
 
 .base{
-    margin:0 auto;
-    display:flex;
-    flex-direction: column;
-    min-height: 100%;
-    font-family: "PT Sans";
-    font-size: 22px;
-    line-height: 26px;
-    color:#242424;
-    background-color:#f2f2f2;
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+.container-site{
     width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 .main-container{
     flex-grow: 1;
@@ -702,6 +707,28 @@
     display:flex;
     list-style: none;
 }
+.breadcrumbs-item:not(:last-child)::after {
+    content: "";
+    background-image: url(/images/vector-right.svg);
+    width: 8px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: inline-block;
+}
+.breadcrumbs-item a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 8px;
+}
+.breadcrumbs-item{
+    list-style: none;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 10px;
+}
 
 .catalog-hotels{
     list-style: none;
@@ -754,6 +781,37 @@
     padding-bottom: 40px;
     align-items: center;
 
+}
+.select-control{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+    width: 292px;
+    height: 49px;
+    margin-left: 200px;
+    margin-right: 70px;
+    border-radius: 4px;
+    appearance: none;
+    padding: 12px 20px;
+    padding-right: 40px;
+    background-image: url(/images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+}
+.button-filter{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(229, 229, 229, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .hotel-card-title{
