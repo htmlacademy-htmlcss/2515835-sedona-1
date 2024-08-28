@@ -10,7 +10,7 @@
       <header class="page-header">
         <div class="header-container">
           <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="images/logo.png" alt="Логотип городка Седона." width="140" height="70">
+            <img class="page-header-logo" src="images/page-header-logo.svg" alt="Логотип городка Седона." width="140" height="70">
           </a>
           <nav class="navigation">
             <ul class="navigation-list">
@@ -21,10 +21,10 @@
                 <a class="navigation-link-current" href="catalog.html">О Седоне</a>
               </li>
               <li class="navigation-item-current">
-                <a class=" navigation-link-current active-link" href="#">Гостинницы</a>
+                <a class=" navigation-link-current active-link" href="#">Гостиницы</a>
               </li>
             </ul>
-            <ul class=" navigation-user">
+            <ul class=" navigation-user header-navigation ">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -58,8 +58,8 @@
                  <li class="breadcrumbs-item">
                    <a class="breadcrumbs-link" href="index.html">
                      <svg class="breadcrumbs-link" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="currentColor" d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" fill="white"/>
-                        <path fill="currentColor" d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white"/>
+                        <path fill="currentColor" d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" />
+                        <path fill="currentColor" d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" />
                       </svg>
                      <span class="visually-hidden" hidden>На главную</span>
                     </a>
@@ -103,7 +103,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group filter-type-house">
-                  <legend class="view"><b>Тип жилья:</b></legend>
+                  <legend class="view"><b>Тип Жилья:</b></legend>
                   <ul class="catalog-products-container">
                     <li class="catalog-product-item">
                       <label class="conveniences">
@@ -169,55 +169,57 @@
           <section class="select-container">
             <h2 class="hotel">Найдено гостиниц: 38</h2>
             <select class="select-control">
-              <option value="cheap">Сначала дешевое</option>
+              <option value="cheap">Сначала дешевые</option>
               <option value="popular">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <a href="#" class="button-filter">
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_131791_168)">
-                  <path d="M4 0H0V6H4V0Z" fill="black"/>
-                  <path d="M16 0H12V6H16V0Z" fill="black"/>
-                  <path d="M10 0H6V6H10V0Z" fill="black"/>
-                  <path d="M4 8H0V14H4V8Z" fill="black"/>
-                  <path d="M16 8H12V14H16V8Z" fill="black"/>
-                  <path d="M10 8H6V14H10V8Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_131791_168">
-                    <rect width="16" height="14" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <span class="visually-hidden" hidden>Показать карточки</span>
-            </a>
-            <a href="#" class="button-filter button-light">
-              <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" fill="black"/>
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-              </svg>
-              <span class="visually-hidden" hidden>Слайдшоу</span>
-            </a>
-            <a href="#" class="button-filter button-light">
-              <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_131791_295)">
-                  <path d="M2 0H0V2H2V0Z" fill="black"/>
-                  <path d="M16 0H4V2H16V0Z" fill="black"/>
-                  <path d="M2 4H0V6H2V4Z" fill="black"/>
-                  <path d="M16 4H4V6H16V4Z" fill="black"/>
-                  <path d="M2 8H0V10H2V8Z" fill="black"/>
-                  <path d="M16 8H4V10H16V8Z" fill="black"/>
-                  <path d="M2 12H0V14H2V12Z" fill="black"/>
-                  <path d="M16 12H4V14H16V12Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_131791_295">
-                    <rect width="16" height="14" fill="white"/>
-                  </clipPath>
-               </defs>
-              </svg>
-              <span class="visually-hidden" hidden>Показать список</span>
-            </a>
+            <div class="button-filter-container">
+              <a href="#" class="button-filter">
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_131791_168)">
+                    <path d="M4 0H0V6H4V0Z" fill="black"/>
+                    <path d="M16 0H12V6H16V0Z" fill="black"/>
+                    <path d="M10 0H6V6H10V0Z" fill="black"/>
+                    <path d="M4 8H0V14H4V8Z" fill="black"/>
+                    <path d="M16 8H12V14H16V8Z" fill="black"/>
+                    <path d="M10 8H6V14H10V8Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_131791_168">
+                      <rect width="16" height="14" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="visually-hidden" hidden>Показать карточки</span>
+              </a>
+              <a href="#" class="button-filter button-light">
+                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0V14H16V12Z" fill="black"/>
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden" hidden>Слайдшоу</span>
+              </a>
+              <a href="#" class="button-filter button-light">
+                <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_131791_295)">
+                    <path d="M2 0H0V2H2V0Z" fill="black"/>
+                    <path d="M16 0H4V2H16V0Z" fill="black"/>
+                    <path d="M2 4H0V6H2V4Z" fill="black"/>
+                    <path d="M16 4H4V6H16V4Z" fill="black"/>
+                    <path d="M2 8H0V10H2V8Z" fill="black"/>
+                    <path d="M16 8H4V10H16V8Z" fill="black"/>
+                    <path d="M2 12H0V14H2V12Z" fill="black"/>
+                    <path d="M16 12H4V14H16V12Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_131791_295">
+                      <rect width="16" height="14" fill="white"/>
+                    </clipPath>
+                 </defs>
+                </svg>
+                <span class="visually-hidden" hidden>Показать список</span>
+              </a>
+            </div>
           </section>
           <ul class="catalog-hotels">
             <li class="hotel-card-container">
@@ -317,12 +319,12 @@
             <div class="subscription-container">
               <h2>Подпишитесь на рассылку</h2>
               <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-              <div class="registration-form">
-                <form action="" class="form-container" method="post">
+              <div class="registration-form-catalog">
+                <form action="https://echo.htmlacademy.ru/" class="form-container" method="post">
                   <label for="container-email"></label>
-                  <input class="field active-pagination" name="container-email" type="text" placeholder="Ваш e-mail" required>
+                  <input class="field active-pagination" id="container-email" name="container-email" type="text" placeholder="Ваш e-mail" required>
+                  <button class="button button-all-3" type="submit">Подписаться</button>
                 </form>
-                <button class="button button-all-3" type="submit">Подписаться</button>
               </div>
             </div>
         </section>
