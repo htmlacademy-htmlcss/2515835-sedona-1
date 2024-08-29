@@ -212,8 +212,8 @@
     padding-top: 51px;
 }
 .hero{
-    background-image: url(/images/hero-border.svg),
-    url(/images/index-background.jpg);
+    background-image: url(../images/hero-border.svg),
+    url(../images/index-background.jpg);
     background-position: bottom;
     color: #000000;
     background-repeat: no-repeat;
@@ -408,7 +408,7 @@
     height: 385px;
 }
 .services-item-image-home{
-    background-image: url(/images/home.svg);
+    background-image: url(../images/home.svg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 230px;
@@ -416,7 +416,7 @@
     margin: 80px 85px;
 }
 .services-item-image-food{
-    background-image: url(/images/food.svg);
+    background-image: url(../images/food.svg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 230px;
@@ -424,7 +424,7 @@
     margin: 80px 85px;
 }
 .services-item-image-souvenir{
-    background-image: url(/images/souvenir.svg);
+    background-image: url(../images/souvenir.svg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     width: 230px;
@@ -504,7 +504,7 @@
 }
 .registration{
     position: relative;
-    background-image:url(/images/background.jpg);
+    background-image:url(../images/background.jpg);
     width: 1200px;
     height: 413px;
     background-repeat: no-repeat;
@@ -710,7 +710,7 @@
     line-height: 24px;
     font-family: "PT Sans", sans-serif;
     text-align: left;
-    background-image: url(/images/catalog-background.jpg);
+    background-image: url(../images/catalog-background.jpg);
     background-repeat: no-repeat;
     width: 1200px;
     min-height: 412px;
@@ -762,7 +762,7 @@
     content: "";
     width: 12px;
     height: 10px;
-    background-image: url(/images/check-mark.svg);
+    background-image: url(../images/check-mark.svg);
     position: absolute;
 }
 .conveniences:hover {
@@ -1039,7 +1039,7 @@ input[type="number"]:focus {
 }
 .breadcrumbs-item:not(:last-child)::after {
     content: "";
-    background-image: url(/images/vector-right.svg);
+    background-image: url(../images/vector-right.svg);
     width: 8px;
     height: 11px;
     background-repeat: no-repeat;
@@ -1166,7 +1166,7 @@ input[type="number"]:focus {
     appearance: none;
     padding: 12px 20px;
     padding-right: 40px;
-    background-image: url(/images/arrow-down.svg);
+    background-image: url(../images/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: right 20px center;
     border: 2px solid #e5e5e5;
@@ -1243,7 +1243,7 @@ input[type="number"]:focus {
     border-radius: 4px;
     display: flex;
     align-items: center;
-    background-image: url(/images/hotel/star.svg);
+    background-image: url(../images/hotel/star.svg);
     background-repeat: space no-repeat;
     align-self: flex-end;
     background-position: center;
@@ -1487,7 +1487,7 @@ input[type="number"]:focus {
     border-radius: 50%;
     background-color: #f2f2f2;
     border: 0;
-    background-image: url(/images/cross.svg);
+    background-image: url(../images/cross.svg);
     background-repeat: no-repeat;
     background-position: center;
     display: block;
@@ -1543,7 +1543,7 @@ input[type="number"]:focus {
     width: 16px;
     height: 15px;
     background-color: #f2f2f2;
-    background-image: url("/images/calendar.svg");
+    background-image: url("../images/calendar.svg");
     background-repeat: no-repeat;
     position: absolute;
     top: 16px;
@@ -1739,7 +1739,7 @@ input[type="number"]:focus {
     content: "";
     width: 19px;
     height: 9px;
-    background-image: url(/images/vector.svg);
+    background-image: url(../images/vector.svg);
     position: absolute;
     bottom: 100%;
     left: 51%;
