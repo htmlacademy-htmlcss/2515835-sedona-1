@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy:Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon"> <!-- 32×32 -->
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
   </head>
   <body class="base">
     <div class="container-site">
@@ -28,6 +28,7 @@
             <ul class="navigation-user header-navigation">
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
+                  <span class="visually-hidden"> Поиск гостиницы </span>
                   <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                     <path fill="currentColor"
                       d="m18.5 17-3.7-3.67a8 8 0 0 0 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
@@ -36,6 +37,7 @@
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">
+                  <span class="visually-hidden"> Избранное </span>
                   <svg aria-hidden="true" class="heart" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20"
                     height="20">
                     <path fill="currentColor"
@@ -70,65 +72,60 @@
         </div>
         <section class="advantages">
           <ul class="advantages-list">
-            <li class="advantages-item advantages-item-town">
-              <div class="advantages-content">
-                <h2 class="advantages-title">Настоящий городок</h2>
-                <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <li class="advantages-item advantages-item-wide">
+              <div class="advantages-item-text">
+                <h3>Настоящий городок</h3>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-            <li class="advantages-item">
-              <img class="picture" src="images/photo-1.jpg" alt="Картинка" width="800" height="385">
-            </li>
-            <li class="advantages-item advantages-item-square">
-              <div class="advantages-content">
-                <h3 class="advantages-title advantages-wide">Небольшая площадь</h3>
-                <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+              <div class="advantages-item-img">
+                <img src="images/photo-1.jpg" width="800" height="385" alt="улица города">
               </div>
             </li>
-            <li class="advantages-item advantages-item-road">
-              <div class="advantages-content">
-                <h3 class="advantages-title advantages-wide">Красивая дорога</h3>
-                <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <li class="advantages-item advantages-item-text ">
+              <h3>Небольшая площадь</h3>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantages-item advantages-item-text ">
+              <h3>Красивая дорога</h3>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages-item advantages-item-text ">
+              <h3>Мало туристов</h3>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+            <li class="advantages-item advantages-item-wide">
+              <div class="advantages-item-text ">
+                <h3>Там есть&nbsp; мост дьявола</h3>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-            </li>
-            <li class="advantages-item advantages-item-tourist">
-              <div class="advantages-content">
-                <h3 class="advantages-title advantages-wide">Мало туристов</h3>
-                <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </li>
-            <li class="advantages-item">
-              <img src="images/photo-2.jpg" alt="Каньон" width="800" height="385">
-            </li>
-            <li class="advantages-item advantages-item-bridge">
-              <div class="advantages-content">
-                <h3 class="advantages-title">Там есть&nbsp; мост дьявола</h3>
-                <p class="advantages-description">Да, по нему можно пройти если вы осмелитесь разумеется</p>
+              <div class="advantages-item-img">
+                <img src="images/photo-2.jpg" width="800" height="385" alt="каньён">
               </div>
             </li>
           </ul>
-          <div class="invitation">
-            <h2 class="invitation-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="invitation-description">Опытный персонал и качественное обслуживание</p>
+          <div class="advantages-item-container">
+            <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p>Опытный персонал и качественное обслуживание!</p>
           </div>
-          <ul class="services">
-            <li class="services-item services-item-home">
-              <div class="services-item-image-home">
-                <h3 class="services-title"> Жилье</h3>
-                <p class="services-description">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
+          <ul class="services-list">
+            <li class="services-item">
+              <div class="services-item-house">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</p>
               </div>
             </li>
             <li class="services-item">
-              <div class="services-item-image-food">
-                <h3 class="services-title">Еда</h3>
-                <p class="services-description">Всегда заказывайте топовый&nbsp;фирменный&nbsp;бургер, вы не разочаруетесь!</p>
+              <div class="services-item-food">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте топовый&nbsp;фирменный&nbsp;бургер, вы не разочаруетесь!</p>
               </div>
             </li>
-            <li class="services-item services-item-souvenir">
-              <div class="services-item-image-souvenir">
-                <h3 class="services-title">Сувениры</h3>
-                <p class="services-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
+            <li class="services-item">
+              <div class="services-item-souvenirs">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
               </div>
-           </li>
+            </li>
           </ul>
         </section>
         <div class="interesting">
@@ -204,14 +201,14 @@
             <div class="field-group">
               <label class="modal-form-title" for="arrival-date">Дата Заезда:</label>
               <div class="data-icon">
-                <input class="modal-form-text" type="text" id="arrival-date" name="arrival-date" placeholder="" required>
+                <input class="modal-form-text" type="text" value="27 апреля 2020" id="arrival-date" name="arrival-date" placeholder="" required>
                 <span class="data-information data-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="field-group">
               <label class="modal-form-title" for="date-of-departure">Дата Выезда:</label>
               <div class="data-icon">
-                <input class="modal-form-text" type="text" id="date-of-departure" name="date-of-departure" placeholder="" required>
+                <input class="modal-form-text" type="text" value="1 сентября 2023" id="date-of-departure" name="date-of-departure" placeholder="" required>
                 <span class="data-information">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -243,7 +240,8 @@
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
-                      будут с вами, возраст которых от 6 до 18лет. Дети до 6 лет размещаются бесплатно.</span>
+                      будут с вами, возраст которых от 6 до 18лет. Дети&nbsp; до&nbsp; 6 лет  &nbsp; размещаются &nbsp;  бесплатно.
+                    </span>
                   </span>
                 </span>
                 <div class="modal-input-container">
