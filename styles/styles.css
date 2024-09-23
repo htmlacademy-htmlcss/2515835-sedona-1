@@ -25,6 +25,7 @@
     line-height: 21px;
     background-color: #f2f2f2;
     color: #333333;
+    min-width: 1200px;
 }
 
 .container-site{
@@ -568,7 +569,7 @@
 }
 
 .button-all-2:active{
-    background-color: rgba(117, 97, 87, 1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-all-2:disabled{
@@ -697,9 +698,8 @@
 
 }
 
-.button-all-3:active{
-    background-color: rgba(130, 179, 211, 1);
-
+.button-all-3:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-all-3:disabled{
@@ -1030,7 +1030,15 @@ input[type="number"]:focus {
 }
 
 .price-input:hover {
-    border: 3px solid #000000;
+    background: #E6E6E6;
+}
+
+.price-input::placeholder {
+    color: #000000;
+}
+
+.price-input:active {
+    border: 2px solid #000000
 }
 
 .toggle-min{
@@ -1388,6 +1396,7 @@ input[type="number"]:focus {
             box-sizing: border-box;
 }
 
+
 .button-filter:hover {
     border: 2px solid #000000;
 }
@@ -1628,29 +1637,6 @@ input[type="number"]:focus {
     margin-bottom: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pagination-link{
     font-size: 20px;
     line-height: 36px;
@@ -1761,9 +1747,6 @@ input[type="number"]:focus {
     border-radius: 50%;
     background-color: #f2f2f2;
     border: 0;
-    background-image: url("../images/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     display: block;
             box-sizing: border-box;
     position: absolute;
@@ -1781,7 +1764,7 @@ input[type="number"]:focus {
     background-color: #e6e6e6;
 }
 
-.modal-close-button:active{
+.modal-close-button svg:active{
     opacity:0.3;
 }
 
@@ -1858,7 +1841,17 @@ input[type="number"]:focus {
 .modal-form-text:focus {
     outline: none;
     border: 3px solid #83b3d3;
+    padding-left: 15px;
   }
+
+.modal-form-text:hover {
+    background: #E6E6E6;
+
+}
+
+.modal-form-text:active {
+    border: 2px solid #000000;
+}
 
 .modal-form-text::-webkit-input-placeholder {
     font-size: 18px;
