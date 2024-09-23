@@ -944,7 +944,7 @@
   height: 48px;
   outline: none;
   border-radius: 4px;
-  border: none;
+  border: 2px solid transparent;
   padding-left: 20px;
   padding-right: 37px;
   display: block;
@@ -1018,7 +1018,7 @@ input[type="number"]:focus {
 
 .price-input:focus {
   outline: none;
-  border: 3px solid #83b3d3;
+  border: 2px solid #83b3d3;
 }
 
 .price-input:hover {
